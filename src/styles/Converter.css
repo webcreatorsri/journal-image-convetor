@@ -1,0 +1,250 @@
+/* ====================== */
+/* Converter Page Layout  */
+/* ====================== */
+
+.converter-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.converter-header h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.converter-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* ====================== */
+/* Form Styles            */
+/* ====================== */
+
+.converter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* File input */
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #f9fafb;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 3px rgba(30,58,138,0.3);
+}
+
+/* Dropdown */
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  background-color: #f9fafb;
+}
+
+select:focus {
+  border-color: #1e3a8a;
+  outline: none;
+  box-shadow: 0 0 3px rgba(30,58,138,0.3);
+}
+
+/* Checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #1e3a8a; /* modern checkbox color */
+}
+
+/* Submit button */
+.converter-form button {
+  padding: 12px;
+  background-color: #1e3a8a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.converter-form button:hover {
+  background-color: #374abe;
+}
+
+.converter-form button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ====================== */
+/* Result Messages        */
+/* ====================== */
+
+#result {
+  margin-top: 24px;
+}
+
+.success {
+  background-color: #dcfce7;
+  border: 1px solid #22c55e;
+  color: #166534;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.error {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.processing {
+  background-color: #fef9c3;
+  border: 1px solid #eab308;
+  color: #854d0e;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* ====================== */
+/* Image Comparison       */
+/* ====================== */
+
+.image-container {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+
+.image-container h3 {
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.comparison-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-column {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.image-column h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.image-column img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 10px;
+}
+
+/* ====================== */
+/* Download Buttons       */
+/* ====================== */
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background-color: #1e3a8a;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #374abe;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ====================== */
+/* Report Section         */
+/* ====================== */
+
+.report-section {
+  margin-top: 24px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.report-section h3 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.report-section pre {
+  background-color: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  max-height: 300px;
+}

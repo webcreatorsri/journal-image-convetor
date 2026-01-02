@@ -1,0 +1,94 @@
+/* Auth.css */
+
+/* Container */
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.auth-container h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+/* Form Inputs */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.auth-container input:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 5px rgba(30, 58, 138, 0.3);
+}
+
+/* Buttons */
+.auth-container button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e3a8a;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.auth-container button:hover {
+  background-color: #374abe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph & Links */
+.auth-container p {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.auth-container a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.auth-container a:hover {
+  color: #374abe;
+}
+
+/* Error Messages (if needed later) */
+.auth-container .error {
+  background-color: #fff5f5;
+  border: 1px solid #f5c2c7;
+  color: #c53030;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .auth-container {
+    margin: 40px 20px;
+    padding: 25px 15px;
+  }
+}

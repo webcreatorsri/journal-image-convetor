@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/* ====================== */
+/* General Page Styles    */
+/* ====================== */
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6; /* light gray */
+  color: #111827;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ====================== */
+/* Navbar                 */
+/* ====================== */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #1e3a8a; /* deep blue */
+  padding: 14px 28px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ====================== */
+/* Navbar Links           */
+/* ====================== */
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #facc15; /* yellow highlight */
+  padding-bottom: 2px;
+}
+
+/* ====================== */
+/* Logout Button          */
+/* ====================== */
+
+.navbar button {
+  margin-left: 20px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  background-color: #facc15; /* yellow */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: #eab308;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ====================== */
+/* Loading State          */
+/* ====================== */
+
+.page-container h2 {
+  text-align: center;
+  color: #374151;
+}
+
+/* ====================== */
+/* Responsive Navbar      */
+/* ====================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar h2 {
+    margin-bottom: 8px;
+  }
+
+  .navbar div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .navbar a,
+  .navbar button {
+    margin-left: 0;
   }
 }
